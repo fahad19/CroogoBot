@@ -1,6 +1,4 @@
-node-irc-bot
-============
+Croogo IRC Bot
+==============
 
-NodeJS IRC bot
-
-Full blog post here: http://fahad19.tumblr.com/post/39920378753/running-an-irc-bot-with-nodejs-locally
+Based on NodeJS IRC bot: http://fahad19.tumblr.com/post/39920378753/running-an-irc-bot-with-nodejs-locally
