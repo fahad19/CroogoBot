@@ -1,8 +1,8 @@
 var config = {
-  server: 'localhost',
-  nick: 'bot',
+  server: 'irc.freenode.net',
+  nick: 'MrCroogo',
   options: {
-    channels: ['#channel'],
+    channels: ['#croogo'],
     debug: false
   }
 };
