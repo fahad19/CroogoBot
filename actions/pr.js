@@ -1,3 +1,6 @@
+/**
+ * Usage: !pr 123
+ */
 var action = function(client, from, to, text, message) {
   var q = text.split(/ (.+)/)[1];
   if (!q || q.length == 0) {
