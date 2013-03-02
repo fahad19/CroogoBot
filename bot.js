@@ -1,11 +1,4 @@
-var config = {
-  server: 'irc.freenode.net',
-  nick: 'MrCroogo',
-  options: {
-    channels: ['#croogo'],
-    debug: false
-  }
-};
+var config = require('./config');
 
 var irc = require('irc');
 var client = new irc.Client(config.server, config.nick, config.options);
@@ -35,3 +28,10 @@ var processor = function(client, from, to, text, message) {
 client.addListener('message', function(from, to, text, message) {
     processor(client, from, to, text, message);
 });
+
+
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello from CroogoBot!');
+}).listen(process.env.VMC_APP_PORT || 1337, null);
