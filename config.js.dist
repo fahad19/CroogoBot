@@ -18,7 +18,8 @@ var config = {
       messages: 'messages'
     }
   },
-  logger: {}
+  logger: {},
+  server: true
 };
 
 module.exports = config;
