@@ -5,10 +5,9 @@
     "node": "0.8.x",
     "npm":  "1.2.x"
   },
-  "scripts": {
-  	"start": "node bot.js"
-  },
   "dependencies": {
-    "irc": "*"
+    "irc": "*",
+    "mysql": "*",
+    "moment": "*"
   }
 }

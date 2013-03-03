@@ -1,10 +1,24 @@
 var config = {
-  server: 'irc.freenode.net',
-  nick: 'CroogoBot',
-  options: {
-    channels: ['#croogo'],
-    debug: false
-  }
+  irc: {
+    server: 'irc.freenode.net',
+    nick: 'BotName',
+    options: {
+      channels: ['#channelname'],
+      password: '',
+      debug: false
+    },
+  },
+  mysql: {
+  	host: '',
+  	username: '',
+  	password: '',
+  	database: '',
+    port: 3306,
+    tables: {
+      messages: 'messages'
+    }
+  },
+  logger: {}
 };
 
 module.exports = config;
