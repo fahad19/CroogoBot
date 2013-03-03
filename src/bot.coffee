@@ -9,10 +9,14 @@ class Bot
     client = new irc.Client @config.irc.server, @config.irc.nick, @config.irc.options
 
     Actions = require './processors/actions'
-    actions = new Actions client: client
+    actions = new Actions 
+      client: client
+      config: @config
 
     Logger = require './processors/logger'
-    logger = new Logger client: client
+    logger = new Logger 
+      client: client
+      config: @config
 
     client.addListener 'message', (from, to, text, message) ->
       actions.process from, to, text, message
