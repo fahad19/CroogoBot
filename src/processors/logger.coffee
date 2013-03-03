@@ -2,9 +2,9 @@ class Logger
 
   client: null
 
-  constructor: (client) ->
-    @client = client
-    @config = require '../config'
+  constructor: (options) ->
+    @client = options.client
+    @config = options.config
 
   process: (from, to, text, message) ->
     if text and text.length > 0 and text[0] is not '!' and to.indexOf '#' > -1 and from is not @config.irc.nick and from.indexOf '#' is -1
