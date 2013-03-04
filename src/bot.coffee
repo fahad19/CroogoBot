@@ -20,7 +20,7 @@ class Bot
 
     client.addListener 'message', (from, to, text, message) ->
       actions.process from, to, text, message
-      logger.process from, to, text, message
+      #logger.process from, to, text, message
 
     if @config.server
       http   = require 'http'
